@@ -27,6 +27,10 @@ gem "twitter-bootstrap-rails"
 
 gem 'jquery-datatables-rails'
 gem 'ajax-datatables-rails'
+
+gem "nested_form"
+gem "haml-rails"
+gem "paperclip"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

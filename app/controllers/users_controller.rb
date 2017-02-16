@@ -61,6 +61,13 @@ class UsersController < ApplicationController
     end
   end
 
+  def datatable_data
+    respond_to do |format|
+      format.html
+      format.json { render json: ::ResourceDatatable.new(view_context) }
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
