@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   resources :roles do 
   	collection do 
   		get "hide_role"
