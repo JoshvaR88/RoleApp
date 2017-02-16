@@ -61,6 +61,10 @@ class RolesController < ApplicationController
     end
   end
 
+  def hide_role
+    @roles = Role.where(is_hide: true)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_role
